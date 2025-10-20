@@ -1,11 +1,12 @@
 ﻿namespace JLM_CEE_Test
 {
     [TestClass]
-    public sealed class Test1
+    public sealed class Test
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod()
         {
+
         }
     }
 }
