@@ -10,7 +10,11 @@ namespace JLM_CEE
     {
         public static long CalcularFactorial(int n)
         {
-            throw new NotImplementedException();
+            long result = n;
+            for (long i = (result - 1); i > 1; i--)
+                result *= i;
+            return result;
         }
+
     }
 }
