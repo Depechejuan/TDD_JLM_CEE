@@ -17,6 +17,7 @@ namespace JLM_CEE_Test
         }
     }
 
+    [TestClass]
     public sealed class Test2
     {
         [DataTestMethod]

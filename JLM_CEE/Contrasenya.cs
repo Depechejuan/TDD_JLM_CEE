@@ -10,7 +10,11 @@ namespace JLM_CEE
     {
         public static bool ContrasenyaCorrecta(string contrasenya)
         {
-            return true;
+            if (contrasenya == null || contrasenya == string.Empty)
+                return false;
+            if (contrasenya.Contains("#") && contrasenya.Length >= 8)
+                return true;
+            return false;
         }
     }
 }
