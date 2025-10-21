@@ -16,4 +16,18 @@ namespace JLM_CEE_Test
             Assert.AreEqual(esperado, result);
         }
     }
+
+    public sealed class Test2
+    {
+        [DataTestMethod]
+        [DataRow("incorrecto", false)]
+        [DataRow("", false)]
+        [DataRow(null, false)]
+        [DataRow("#correcto", true)]
+        public void EsConstrasenyaCorrecta(string input,  bool esperado)
+        {
+            bool result = Contrasenya.ContrasenyaCorrecta(input);
+            Assert.AreEqual(esperado, result);
+        }
+    }
 }

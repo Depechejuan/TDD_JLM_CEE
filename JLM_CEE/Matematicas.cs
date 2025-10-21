@@ -12,7 +12,7 @@ namespace JLM_CEE
         {
             long result = n;
             for (long i = (result - 1); i > 1; i--)
-                result *= i;
+                result = result + i;
             return result;
         }
 
